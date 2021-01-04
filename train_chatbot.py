@@ -43,8 +43,22 @@ print (len(documents), "documents")
 print (len(classes), "classes", classes)
 # words = all words, vocabulary
 print (len(words), "unique lemmatized words", words)
+#print(words)
+# writing lemmatized word and classes to JSON
+#for the WebUI
+pickle.dump(words,open('words.pkl','wb'))
+pickle.dump(classes,open('classes.pkl','wb'))
+#json = json.dumps(classes)
+#f = open("classes.json","w")
+#f.write(json)
+#f.close()
+#json = json.dumps(words)
+#f = open("words.json","w")
+#f.write(json)
+#f.close()
 
-
+#json.dumps(words,open('words.json','w'))
+#json.dumps(classes,open('classes.json','w'))
 pickle.dump(words,open('words.pkl','wb'))
 pickle.dump(classes,open('classes.pkl','wb'))
 

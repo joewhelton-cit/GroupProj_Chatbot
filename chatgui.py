@@ -79,14 +79,14 @@ def send():
         ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
     
         res = chatbot_response(msg)
-        ChatLog.insert(END, "Bot: " + res + '\n\n')
+        ChatLog.insert(END, "Finance Bot: " + res + '\n\n')
             
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
  
 
 base = Tk()
-base.title("Ask the bot about a loan ")
+base.title("Ask about a loan ")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
